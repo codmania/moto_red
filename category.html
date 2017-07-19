@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sport.AK</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="css/akslider.css" rel="stylesheet" type="text/css" />
+    <link href="css/donate.css" rel="stylesheet" type="text/css" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" />
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/mootools/1.3.1/mootools-yui-compressed.js'></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body class="tm-isblog">
+
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+
+    <div class="over-wrap">
+        <div class="toolbar-wrap">
+            <div class="uk-container uk-container-center">
+                <div class="tm-toolbar uk-clearfix uk-hidden-small">
+
+                    <div class="uk-float-right">
+                        <div class="uk-panel">
+                            <div class="social-top">
+                                <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-facebook"></span></a>
+                                <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-twitter"></span></a>
+                                <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-google"></span></a>
+                                <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-pinterest"></span></a>
+                                <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-youtube"></span></a>
+                                <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-instagram"></span></a>
+                                <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-flickr"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-menu-box">
+
+            <div style="height: 70px;" class="uk-sticky-placeholder">
+                <nav style="margin: 0px;" class="tm-navbar uk-navbar" data-uk-sticky="">
+                    <div class="uk-container uk-container-center">
+                        <a class="tm-logo uk-float-left" href="index.html">
+                            <img src="images/logo-img.png" alt="logo" title="logo"> <span>Sport<em>.ak</em></span>
+                        </a>
+
+                        <ul class="uk-navbar-nav uk-hidden-small">
+                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="index.html">Home</a>
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                                    <div class="uk-grid uk-dropdown-grid">
+                                        <div class="uk-width-1-1">
+                                            <ul class="uk-nav uk-nav-navbar">
+                                                <li><a class="yellow-scheme" href="../yellow/index.html">Yellow Color Scheme</a>
+                                                </li>
+                                                <li><a class="blue-scheme" href="../blue/index.html">Blue Color Scheme</a>
+                                                </li>
+                                                <li><a class="red-scheme" href="../red/index.html">Red Color Scheme</a>
+                                                </li>
+                                                <li><a href="offline.html">Offline Page</a>
+                                                </li>
+                                                <li><a href="404.html">Error Page</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="about.html">About</a></li>
+                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="#">Pages</a>
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                                    <div class="uk-grid uk-dropdown-grid">
+                                        <div class="uk-width-1-1">
+                                            <ul class="uk-nav uk-nav-navbar">
+                                                <li><a href="players.html">Players</a>
+                                                </li>
+                                                <li><a href="gallery.html">Gallery</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="match-list.html">Match</a>
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                                    <div class="uk-grid uk-dropdown-grid">
+                                        <div class="uk-width-1-1">
+                                            <ul class="uk-nav uk-nav-navbar">
+                                                <li><a href="results.html">Results</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="news.html">News</a>
+                            </li>
+                            <li class="uk-active"><a href="category.html">Shop</a>
+                            </li>
+                            <li><a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="tm-top-a-box tm-full-width tm-box-bg-1 ">
+           <div class="uk-container uk-container-center">
+              <section id="tm-top-a" class="tm-top-a uk-grid uk-grid-collapse" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
+                 <div class="uk-width-1-1 uk-row-first">
+                    <div class="uk-panel">
+                       <div class="uk-cover-background uk-position-relative head-wrap" style="height: 290px; background-image: url('images/head-bg.jpg');">
+                          <img class="uk-invisible" src="images/head-bg.jpg" alt="" height="290" width="1920">
+                          <div class="uk-position-cover uk-flex uk-flex-center head-title">
+                             <h1>
+                               Men's sports jacket
+                             </h1>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </section>
+           </div>
+        </div>
+
+        <div class="uk-container uk-container-center alt">
+            <ul class="uk-breadcrumb">
+                <li><a href="/index.html">Home</a></li>
+                <li class="uk-active"><span>Clothing</span></li>
+            </ul>
+        </div>
+
+        <div class="uk-container uk-container-center">
+            <div id="tm-middle" class="tm-middle uk-grid" data-uk-grid-match="" data-uk-grid-margin="">
+                <div class="tm-main uk-width-medium-1-1 uk-row-first">
+                    <main id="tm-content" class="tm-content">
+                        <div id="system-message-container"></div>
+                        <div class="jshop" id="comjshop">
+                            <h1>Clothing</h1>
+                            <div class="jshop_list_category">
+                            </div>
+                            <div class="jshop_list_product">
+                                <form action="/index.php/shop/clothing" method="post" name="sort_count" id="sort_count">
+                                    <div class="block_sorting_count_to_page">
+                                        <span class="box_products_sorting">
+                                            Order by: 
+                                            <select id="order" name="order" class="inputbox" onchange="submitListProductFilters()">
+                                                <option value="1" selected="selected">Name</option>
+                                                <option value="2">Price</option>
+                                                <option value="3">Date</option>
+                                                <option value="6">Popular</option>
+                                                <option value="4">Predefined</option>
+                                            </select>
+                                            <img src="http://sport.statiolh.bget.ru/components/com_jshopping/images/arrow_up.gif" alt="orderby" onclick="submitListProductFilterSortDirection()">
+                                        </span>
+                                        <span class="box_products_count_to_page">
+                                            Display: 
+                                            <select id="limit" name="limit" class="inputbox" onchange="submitListProductFilters()">
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="12" selected="selected">12</option>
+                                                <option value="15">15</option>
+                                                <option value="20">20</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="99999">All</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                    <input name="orderby" id="orderby" value="0" type="hidden">
+                                    <input name="limitstart" value="0" type="hidden">
+                                </form>
+                                <div class="jshop list_product" id="comjshop_list_product">
+                                    <div class="list_product_row uk-grid" data-uk-grid-match="{target:'.uk-panel'}">
+                                        <div class="uk-width-medium-1-4 uk-panel jswidth25 block_product">
+                                            <div class="product productitem_14">
+                                                <div class="image">
+                                                    <div class="image_block">
+                                                        <div class="product_label">
+                                                            <img src="images/shop/sale.png" alt="Sale">
+                                                        </div>
+                                                        <a href="product.html">
+                                                        <img class="jshop_img" src="images/shop/thumb_jacket51.jpg" alt="Fashionable Mens Hoodie" title="Fashionable Mens Hoodie">
+                                                        </a>
+                                                        <div class="name">
+                                                            <h2 class="product_title"><a href="product.html">Fashionable Mens Hoodie</a></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mainblock">
+                                                    <div class="price-wrap">
+                                                        <div class="old_price"><span>
+                                                            $200</span>
+                                                        </div>
+                                                        <div class="jshop_price">
+                                                            <span>$120</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a class="button_buy" href="#">Buy</a> &nbsp;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-4 uk-panel jswidth25 block_product">
+                                            <div class="product productitem_5">
+                                                <div class="image">
+                                                    <div class="image_block">
+                                                        <div class="product_label">
+                                                            <img src="images/shop/new.png" alt="New">
+                                                        </div>
+                                                        <a href="product.html">
+                                                        <img class="jshop_img" src="images/shop/thumb_T-shirt31.jpg" alt="Football shirt" title="Football shirt">
+                                                        </a>
+                                                        <div class="name">
+                                                            <h2 class="product_title"><a href="product.html">Football shirt</a></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mainblock">
+                                                    <div class="price-wrap">
+                                                        <div class="old_price"><span>
+                                                            $100</span>
+                                                        </div>
+                                                        <div class="jshop_price">
+                                                            <span>$78</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a class="button_buy" href="#">Buy</a> &nbsp;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-4 uk-panel jswidth25 block_product">
+                                            <div class="product productitem_16">
+                                                <div class="image">
+                                                    <div class="image_block">
+                                                        <a href="product.html">
+                                                        <img class="jshop_img" src="images/shop/thumb_jacket63.jpg" alt="High-quality Men's Sport Suit" title="High-quality Men's Sport Suit">
+                                                        </a>
+                                                        <div class="name">
+                                                            <h2 class="product_title"><a href="product.html">High-quality Men's Sport Suit</a></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mainblock">
+                                                    <div class="price-wrap">
+                                                        <div class="old_price"><span>
+                                                            $200</span>
+                                                        </div>
+                                                        <div class="jshop_price">
+                                                            <span>$120</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a class="button_buy" href="#">Buy</a> &nbsp;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-4 uk-panel jswidth25 block_product">
+                                            <div class="product productitem_12">
+                                                <div class="image">
+                                                    <div class="image_block">
+                                                        <a href="product.html">
+                                                        <img class="jshop_img" src="images/shop/thumb_jacket43.jpg" alt="Hoodies Male Sport Fitness" title="Hoodies Male Sport Fitness">
+                                                        </a>
+                                                        <div class="name">
+                                                            <h2 class="product_title"><a href="product.html">Hoodies Male Sport Fitness</a></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mainblock">
+                                                    <div class="price-wrap">
+                                                        <div class="old_price"><span>
+                                                            $200</span>
+                                                        </div>
+                                                        <div class="jshop_price">
+                                                            <span>$120</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a class="button_buy" href="#">Buy</a> &nbsp;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nvg_clear"></div>
+                                    <div class="list_product_row uk-grid" data-uk-grid-match="{target:'.uk-panel'}">
+                                        <div class="uk-width-medium-1-4 uk-panel jswidth25 block_product">
+                                            <div class="product productitem_4">
+                                                <div class="image">
+                                                    <div class="image_block">
+                                                        <a href="product.html">
+                                                        <img class="jshop_img" src="images/shop/thumb_cloth11.jpg" alt="Men's sport suit" title="Men's sport suit">
+                                                        </a>
+                                                        <div class="name">
+                                                            <h2 class="product_title"><a href="product.html">Men's sport suit</a></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mainblock">
+                                                    <div class="price-wrap">
+                                                        <div class="old_price"><span>
+                                                            $200</span>
+                                                        </div>
+                                                        <div class="jshop_price">
+                                                            <span>$120</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a class="button_buy" href="#">Buy</a> &nbsp;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-4 uk-panel jswidth25 block_product">
+                                            <div class="product productitem_6">
+                                                <div class="image">
+                                                    <div class="image_block">
+                                                        <div class="product_label">
+                                                            <img src="images/shop/sale.png" alt="Sale">
+                                                        </div>
+                                                        <a href="product.html">
+                                                        <img class="jshop_img" src="images/shop/thumb_jacket11.jpg" alt="Men's sports jacket" title="Men's sports jacket">
+                                                        </a>
+                                                        <div class="name">
+                                                            <h2 class="product_title"><a href="product.html">Men's sports jacket</a></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mainblock">
+                                                    <div class="price-wrap">
+                                                        <div class="old_price"><span>
+                                                            $200</span>
+                                                        </div>
+                                                        <div class="jshop_price">
+                                                            <span>$120</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a class="button_buy" href="#">Buy</a> &nbsp;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-4 uk-panel jswidth25 block_product">
+                                            <div class="product productitem_9">
+                                                <div class="image">
+                                                    <div class="image_block">
+                                                        <div class="product_label">
+                                                            <img src="images/shop/new.png" alt="New">
+                                                        </div>
+                                                        <a href="product.html">
+                                                        <img class="jshop_img" src="images/shop/thumb_Costume21.jpg" alt="Men's track suit" title="Men's track suit">
+                                                        </a>
+                                                        <div class="name">
+                                                            <h2 class="product_title"><a href="product.html">Men's track suit</a></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mainblock">
+                                                    <div class="price-wrap">
+                                                        <div class="old_price"><span>
+                                                            $100</span>
+                                                        </div>
+                                                        <div class="jshop_price">
+                                                            <span>$78</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a class="button_buy" href="#">Buy</a> &nbsp;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-4 uk-panel jswidth25 block_product">
+                                            <div class="product productitem_8">
+                                                <div class="image">
+                                                    <div class="image_block">
+                                                        <a href="product.html">
+                                                        <img class="jshop_img" src="images/shop/thumb_costume11.jpg" alt="Men's track suit of different colors" title="Men's track suit of different colors">
+                                                        </a>
+                                                        <div class="name">
+                                                            <h2 class="product_title"><a href="product.html">Men's track suit of different colors</a></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mainblock">
+                                                    <div class="price-wrap">
+                                                        <div class="old_price"><span>
+                                                            $200</span>
+                                                        </div>
+                                                        <div class="jshop_price">
+                                                            <span>$120</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a class="button_buy" href="#">Buy</a> &nbsp;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nvg_clear"></div>
+                                    <div class="list_product_row uk-grid" data-uk-grid-match="{target:'.uk-panel'}">
+                                        <div class="uk-width-medium-1-4 uk-panel jswidth25 block_product">
+                                            <div class="product productitem_2">
+                                                <div class="image">
+                                                    <div class="image_block">
+                                                        <div class="product_label">
+                                                            <img src="images/shop/sale.png" alt="Sale">
+                                                        </div>
+                                                        <a href="product.html">
+                                                        <img class="jshop_img" src="images/shop/thumb_pDSP1-22079515v750.jpg" alt="Men's Ultimate Fleece Burnout Pullover Hoodie" title="Men's Ultimate Fleece Burnout Pullover Hoodie">
+                                                        </a>
+                                                        <div class="name">
+                                                            <h2 class="product_title"><a href="product.html">Men's Ultimate Fleece Burnout Pullover Hoodie</a></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mainblock">
+                                                    <div class="price-wrap">
+                                                        <div class="old_price"><span>
+                                                            $200</span>
+                                                        </div>
+                                                        <div class="jshop_price">
+                                                            <span>$120</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a class="button_buy" href="#">Buy</a> &nbsp;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-4 uk-panel jswidth25 block_product">
+                                            <div class="product productitem_1">
+                                                <div class="image">
+                                                    <div class="image_block">
+                                                        <div class="product_label">
+                                                            <img src="images/shop/new.png" alt="New">
+                                                        </div>
+                                                        <a href="product.html">
+                                                        <img class="jshop_img" src="images/shop/thumb_T-shirt21.jpg" alt="Sports T-shirt with user name" title="Sports T-shirt with user name">
+                                                        </a>
+                                                        <div class="name">
+                                                            <h2 class="product_title"><a href="product.html">Sports T-shirt with user name</a></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mainblock">
+                                                    <div class="price-wrap">
+                                                        <div class="old_price"><span>
+                                                            $100</span>
+                                                        </div>
+                                                        <div class="jshop_price">
+                                                            <span>$78</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a class="button_buy" href="#">Buy</a> &nbsp;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-4 uk-panel jswidth25 block_product">
+                                            <div class="product productitem_7">
+                                                <div class="image">
+                                                    <div class="image_block">
+                                                        <div class="product_label">
+                                                            <img src="images/shop/new.png" alt="New">
+                                                        </div>
+                                                        <a href="product.html">
+                                                        <img class="jshop_img" src="images/shop/thumb_T-shirt41.jpg" alt="Sports T-shirt with user name" title="Sports T-shirt with user name">
+                                                        </a>
+                                                        <div class="name">
+                                                            <h2 class="product_title"><a href="product.html">Sports T-shirt with user name</a></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mainblock">
+                                                    <div class="price-wrap">
+                                                        <div class="old_price"><span>
+                                                            $100</span>
+                                                        </div>
+                                                        <div class="jshop_price">
+                                                            <span>$78</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a class="button_buy" href="#">Buy</a> &nbsp;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-4 uk-panel jswidth25 block_product">
+                                            <div class="product productitem_11">
+                                                <div class="image">
+                                                    <div class="image_block">
+                                                        <div class="product_label">
+                                                            <img src="images/shop/new.png" alt="New">
+                                                        </div>
+                                                        <a href="product.html">
+                                                        <img class="jshop_img" src="images/shop/thumb_Jacket31.jpg" alt="Sportswear outerwear coats" title="Sportswear outerwear coats">
+                                                        </a>
+                                                        <div class="name">
+                                                            <h2 class="product_title"><a href="product.html">Sportswear outerwear coats</a></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mainblock">
+                                                    <div class="price-wrap">
+                                                        <div class="old_price"><span>
+                                                            $100</span>
+                                                        </div>
+                                                        <div class="jshop_price">
+                                                            <span>$151</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <a class="button_buy" href="#">Buy</a> &nbsp;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nvg_clear"></div>
+                                </div>
+                                <div class="nvg_clear"></div>
+                                <div class="jshop_pagination">
+                                    <div class="pagination">
+                                        <ul>
+                                            <li class="pagination-start"><span class="pagenav">Start</span></li>
+                                            <li class="pagination-prev"><span class="pagenav">Prev</span></li>
+                                            <li><span class="pagenav">1</span></li>
+                                            <li><a href="#" class="pagenav">2</a></li>
+                                            <li class="pagination-next"><a data-original-title="Next" title="" href="#" class="hasTooltip pagenav">Next</a></li>
+                                            <li class="pagination-end"><a data-original-title="End" title="" href="#" class="hasTooltip pagenav">End</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom-wrapper">
+            <div class="tm-bottom-f-box  ">
+                <div class="uk-container uk-container-center">
+                    <section id="tm-bottom-f" class="tm-bottom-f uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
+
+                        <div class="uk-width-1-1">
+                            <div class="uk-panel">
+                                <div class="footer-logo">
+                                    <a href="/"><img src="images/footer-logo-img.png" alt=""><span>Sport</span>.ak</a>
+                                </div>
+                                <div class="footer-socials">
+                                    <div class="social-top">
+                                        <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-facebook"></span></a>
+                                        <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-twitter"></span></a>
+                                        <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-google"></span></a>
+                                        <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-pinterest"></span></a>
+                                        <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-youtube"></span></a>
+                                        <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-instagram"></span></a>
+                                        <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-flickr"></span></a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+
+                                <p class="footer-about-text">
+                                    Cras convallis feugiat felis eget venenatis. Sed leo tellus, luctus eget ante quis, rutrum dignissim enim. Morbi efficitur tellus non mauris tincidunt feugiat. Vestibulum quis nunc in nibh eleifend convallis. Vestibulum nec viverra dui. Suspendisse vel neque eros. Donec tincidunt tempus massa sed vehicula. Integer ullamcorper at elit eu commodo.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="tm-bottom-g-box  ">
+                <div class="uk-container uk-container-center">
+                    <section id="tm-bottom-g" class="tm-bottom-f uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
+
+                        <div class="uk-width-1-1 uk-width-large-1-2">
+                            <div class="uk-panel">
+                                <div class="match-list-wrap foot">
+                                    <div id="carusel-7" class="uk-slidenav-position" data-uk-slideshow="{ height : 37, autoplay:true, animation:'scroll' }">
+                                        <div class="last-match-top">
+                                            <div class="last-match-title">Last match</div>
+                                            <div class="footer-slider-btn">
+                                                <a href="/" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                                                <a href="/" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <ul class="uk-slideshow">
+                                            <li class="" aria-hidden="true">
+                                                <div class="match-list-item alt foot">
+                                                    <div class="wrapper">
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava.png" class="img-polaroid" alt="England VS Amsterdam (2015-11-14)" title="England VS Amsterdam (2015-11-14)">
+                                                            </a>
+                                                        </div>
+                                                        <div class="team-name">
+                                                            England </div>
+                                                        <div class="versus">VS</div>
+
+                                                        <div class="team-name">
+                                                            Amsterdam </div>
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava1.png" class="img-polaroid" alt="England VS Amsterdam (2015-11-14)" title="England VS Amsterdam (2015-11-14)">
+                                                            </a>
+                                                        </div>
+                                                        <a class="read-more" href="match-single.html">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="" aria-hidden="true">
+                                                <div class="match-list-item alt foot">
+                                                    <div class="wrapper">
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava2.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)">
+                                                            </a>
+                                                        </div>
+                                                        <div class="team-name">
+                                                            Cambridgehire </div>
+                                                        <div class="versus">VS</div>
+
+                                                        <div class="team-name">
+                                                            china </div>
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava3.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)">
+                                                            </a>
+                                                        </div>
+                                                        <a class="read-more" href="match-single.html">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="" aria-hidden="true">
+                                                <div class="match-list-item alt foot">
+                                                    <div class="wrapper">
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava4.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-20)" title="Cambridgehire VS china (2015-11-20)">
+                                                            </a>
+                                                        </div>
+                                                        <div class="team-name">
+                                                            Cambridgehire </div>
+                                                        <div class="versus">VS</div>
+
+                                                        <div class="team-name">
+                                                            china </div>
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava5.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-20)" title="Cambridgehire VS china (2015-11-20)">
+                                                            </a>
+                                                        </div>
+                                                        <a class="read-more" href="match-single.html">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="" aria-hidden="true">
+                                                <div class="match-list-item alt foot">
+                                                    <div class="wrapper">
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava.png" class="img-polaroid" alt="England VS Amsterdam (2015-11-14)" title="England VS Amsterdam (2015-11-14)">
+                                                            </a>
+                                                        </div>
+                                                        <div class="team-name">
+                                                            England </div>
+                                                        <div class="versus">VS</div>
+
+                                                        <div class="team-name">
+                                                            Amsterdam </div>
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava1.png" class="img-polaroid" alt="England VS Amsterdam (2015-11-14)" title="England VS Amsterdam (2015-11-14)">
+                                                            </a>
+                                                        </div>
+                                                        <a class="read-more" href="match-single.html">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li aria-hidden="false">
+                                                <div class="match-list-item alt foot">
+                                                    <div class="wrapper">
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava2.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)">
+                                                            </a>
+                                                        </div>
+                                                        <div class="team-name">
+                                                            Cambridgehire </div>
+                                                        <div class="versus">VS</div>
+
+                                                        <div class="team-name">
+                                                            china </div>
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava3.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)">
+                                                            </a>
+                                                        </div>
+                                                        <a class="read-more" href="match-single.html">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="" aria-hidden="true">
+                                                <div class="match-list-item alt foot">
+                                                    <div class="wrapper">
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava4.png" class="img-polaroid" alt="King VS china (2015-11-20)" title="King VS china (2015-11-20)">
+                                                            </a>
+                                                        </div>
+                                                        <div class="team-name">
+                                                            King </div>
+                                                        <div class="versus">VS</div>
+
+                                                        <div class="team-name">
+                                                            china </div>
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava5.png" class="img-polaroid" alt="King VS china (2015-11-20)" title="King VS china (2015-11-20)">
+                                                            </a>
+                                                        </div>
+                                                        <a class="read-more" href="match-single.html">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="" aria-hidden="true">
+                                                <div class="match-list-item alt foot">
+                                                    <div class="wrapper">
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava.png" class="img-polaroid" alt="England VS Amsterdam (2015-11-14)" title="England VS Amsterdam (2015-11-14)">
+                                                            </a>
+                                                        </div>
+                                                        <div class="team-name">
+                                                            England </div>
+                                                        <div class="versus">VS</div>
+
+                                                        <div class="team-name">
+                                                            Amsterdam </div>
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava1.png" class="img-polaroid" alt="England VS Amsterdam (2015-11-14)" title="England VS Amsterdam (2015-11-14)">
+                                                            </a>
+                                                        </div>
+                                                        <a class="read-more" href="match-single.html">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="" aria-hidden="true">
+                                                <div class="match-list-item alt foot">
+                                                    <div class="wrapper">
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava2.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)">
+                                                            </a>
+                                                        </div>
+                                                        <div class="team-name">
+                                                            Cambridgehire </div>
+                                                        <div class="versus">VS</div>
+
+                                                        <div class="team-name">
+                                                            china </div>
+                                                        <div class="logo">
+                                                            <a href="match-single.html">
+                                                                <img src="images/team-ava3.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)">
+                                                            </a>
+                                                        </div>
+                                                        <a class="read-more" href="match-single.html">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uk-width-1-1 uk-width-large-1-2">
+                            <div  class="uk-panel">
+                                <div class="acymailing_module" id="acymailing_module_formAcymailing54111">
+                                    <div class="acymailing_fulldiv" id="acymailing_fulldiv_formAcymailing54111">
+                                        <form id="formAcymailing54111" method="post" name="formAcymailing54111">
+                                            <div class="acymailing_module_form">
+                                                <div class="mail-title">Newsletters</div>
+                                                <div class="acymailing_introtext">Suspendisse sodales, magna at dignissim cursus, velit ex porttitor eros.</div>
+                                                <div class="clear"></div>
+                                                <div class="space"></div>
+                                                <table class="acymailing_form">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="acyfield_email acy_requiredField">
+                                                                <span class="mail-wrap">
+                                                                    <input id="user_email_formAcymailing54111" onfocus="if(this.value == 'Enter your email') this.value = '';" onblur="if(this.value=='') this.value='Enter your email';" class="inputbox" name="user[email]" style="width:80%" value="Enter your email" title="Enter your email" type="text">
+                                                            </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td class="acysubbuttons">
+                                                                <span class="submit-wrap">
+                                                                    <span class="submit-wrapper">
+                                                                        <input class="button subbutton btn btn-primary" value="Subscribe" name="Submit" onclick="try{ return submitacymailingform('optin','formAcymailing54111'); }catch(err){alert('The form could not be submitted '+err);return false;}" type="submit">
+                                                                    </span>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <footer id="tm-footer" class="tm-footer">
+
+
+                <div class="uk-panel">
+                    <div class="uk-container uk-container-center">
+                        <div class="uk-grid">
+                            <div class="uk-width-1-1">
+                                <div class="footer-wrap">
+                                    <div class="foot-menu-wrap">
+                                        <ul class="nav menu">
+                                            <li class="item-165"><a href="about.html">About</a>
+                                            </li>
+                                            <li class="item-166"><a href="players.html">Players</a>
+                                            </li>
+                                            <li class="item-167"><a href="match-list.html">Match</a>
+                                            </li>
+                                            <li class="item-168"><a href="results.html">Results</a>
+                                            </li>
+                                            <li class="item-169"><a href="news.html">News</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="copyrights">Copyright © 2015 <a href="/">Sportak Team</a>. All Rights Reserved.</div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <div id="offcanvas" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-offcanvas">
+                    <li class="uk-parent"><a href="index.html">Home</a>
+                        <ul class="uk-nav-sub">
+                            <li><a class="yellow-scheme" href="../yellow/index.html">Yellow Color Scheme</a>
+                            </li>
+                            <li><a class="blue-scheme" href="../blue/index.html">Blue Color Scheme</a>
+                            </li>
+                            <li><a class="red-scheme" href="../red/index.html">Red Color Scheme</a>
+                            </li>
+                            <li><a href="offline.html">Offline Page</a>
+                            </li>
+                            <li><a href="404.html">Error Page</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="uk-parent"><a href="#">Pages</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="players.html">Players</a>
+                            </li>
+                            <li><a href="gallery.html">Gallery</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent"><a href="match-list.html">Match</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="results.html">Results</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">News</a>
+                    </li>
+                    <li class="uk-active"><a href="category.html">Shop</a>
+                    </li>
+                    <li><a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/uikit.js"></script>
+<script type="text/javascript" src="js/SimpleCounter.js"></script>
+<script type="text/javascript" src="js/components/grid.js"></script>
+<script type="text/javascript" src="js/components/slider.js"></script>
+<script type="text/javascript" src="js/components/slideshow.js"></script>
+<script type="text/javascript" src="js/components/slideset.js"></script>
+<script type="text/javascript" src="js/components/sticky.js"></script>
+<script type="text/javascript" src="js/components/lightbox.js"></script>
+<script type="text/javascript" src="js/components/accordion.js"></script>
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+
+<script type="text/javascript" src="js/theme.js"></script>
+<script type="text/javascript">
+    new SimpleCounter("countdown4", 1447448400, {
+      'continue': 0,
+      format: '{D} {H} {M} {S}',
+      lang: {
+          d: {
+              single: 'day',
+              plural: 'days'
+          }, //days
+          h: {
+              single: 'hr',
+              plural: 'hrs'
+          }, //hours
+          m: {
+              single: 'min',
+              plural: 'min'
+          }, //minutes
+          s: {
+              single: 'sec',
+              plural: 'sec'
+          } //seconds
+      },
+      formats: {
+          full: "<span class='countdown_number' style='color:  '>{number} </span> <span class='countdown_word' style='color:  '>{word}</span> <span class='countdown_separator'>:</span>", //Format for full units representation
+          shrt: "<span class='countdown_number' style='color:  '>{number} </span>" //Format for short unit representation
+      }
+  });
+</script>
+
+</body>
+
+</html>
