@@ -1,3 +1,12 @@
-p {
-    color: red;
+$primary: #6200EA; // rgb(98, 0, 234)
+$light-primary: #5202c1;
+
+.match-list-single {
+    .match-list-item { 
+        .versus {
+            color: #fff;
+        }
+    }
 }
+
+
