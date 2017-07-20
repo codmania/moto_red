@@ -1,3 +1,18 @@
+.text-capital {
+  text-transform: uppercase; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.color-primary {
+  color: #6200EA; }
+
+.color-alter {
+  color: #FF8300; }
+
 .tab-groups button.tablinks {
   background-color: transparent;
   border: 0;
@@ -25,26 +40,13 @@
   height: 44px;
   position: relative; }
 
-.uk-breadcrumb.tab-groups button.tablinks.active:after {
-  color: transparent;
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  border-bottom: 7px solid #fff;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  width: 0; }
-
 .uk-breadcrumb.tab-groups li {
   position: relative;
   z-index: 1;
   padding-right: 35px; }
 
 .uk-breadcrumb.tab-groups li:hover:before {
-  background: #5202c1; }
+  background: #5202C1; }
 
 .uk-breadcrumb.tab-groups li:before {
   content: '';
@@ -63,7 +65,76 @@
   transition: all 0.4s ease-in-out 0s; }
 
 .uk-breadcrumb.tab-groups li.activeTab:before {
-  background: #5202c1; }
+  background: #5202C1; }
 
 .uk-breadcrumb.tab-groups > li:nth-child(n+2):before {
   content: ''; }
+
+.input-group {
+  position: relative;
+  width: 100%;
+  display: table;
+  border-collapse: separate; }
+  .input-group .form-control {
+    display: table-cell;
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0; }
+  .input-group input.form-control {
+    transition: all 0.4s ease-in-out 0s; }
+    .input-group input.form-control:hover, .input-group input.form-control:focus {
+      outline: none;
+      border-color: #6200EA; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0; }
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  min-height: 0%;
+  overflow-x: auto; }
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  background-color: transparent; }
+
+.table th, .table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #eceeef; }
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #eceeef; }
+
+.btn {
+  padding: 7px 10px;
+  min-width: 100px;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.4s ease-in-out 0s;
+  outline: none; }
+
+.btn-alter {
+  border: 1px solid #FF8300;
+  color: #FF8300; }
+  .btn-alter:hover {
+    background-color: #FF8300;
+    color: #fff; }

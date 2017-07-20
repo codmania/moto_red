@@ -1,5 +1,27 @@
 $primary: #6200EA; // rgb(98, 0, 234)
-$light-primary: #5202c1;
+$light-primary: #5202C1;
+$alter: #FF8300;
+
+
+.text-capital {
+    text-transform: uppercase;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.color-primary {
+    color: $primary;
+}
+
+.color-alter {
+    color: $alter;
+}
 
 .tab-groups {
     button.tablinks {
@@ -32,19 +54,19 @@ $light-primary: #5202c1;
         position: relative;
     }
 
-    button.tablinks.active:after {
-        color: transparent;
-        content: "";
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        border-bottom: 7px solid #fff;
-        border-left: 7px solid transparent;
-        border-right: 7px solid transparent;
-        width: 0;
-    }
+    // button.tablinks.active:after {
+    //     color: transparent;
+    //     content: "";
+    //     position: absolute;
+    //     bottom: -1px;
+    //     left: 0;
+    //     right: 0;
+    //     margin: auto;
+    //     border-bottom: 7px solid #fff;
+    //     border-left: 7px solid transparent;
+    //     border-right: 7px solid transparent;
+    //     width: 0;
+    // }
 
     li {
         position: relative;
@@ -81,3 +103,90 @@ $light-primary: #5202c1;
         content: '';
     }
 }
+
+.input-group {
+    position: relative;
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+
+    .form-control {
+        display: table-cell;
+        position: relative;
+        z-index: 2;
+        float: left;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    input.form-control {
+        transition: all 0.4s ease-in-out 0s;
+
+        &:hover,
+        &:focus {
+            outline: none;
+            border-color: $primary;
+        }
+    }
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    min-height: 0%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #eceeef;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #eceeef;
+}
+
+.btn {
+    padding: 7px 10px;
+    min-width: 100px;
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.4s ease-in-out 0s;
+    outline: none;
+}
+
+.btn-alter {
+    border: 1px solid $alter;
+    color: $alter;
+
+    &:hover {
+        background-color: $alter;
+        color: #fff;
+    }
+}
+
