@@ -2,14 +2,41 @@
 body {
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
+.mt-5 {
+  margin-top: 5px; }
+
+.mt-10 {
+  margin-top: 10px; }
+
+.mt-20 {
+  margin-top: 20px; }
+
+.mb-20 {
+  margin-bottom: 20px; }
+
+.mb-100 {
+  margin-bottom: 100px; }
+
+.ml-5 {
+  margin-left: 5px; }
+
 .text-capital {
   text-transform: uppercase; }
+
+.text-low {
+  text-transform: none !important; }
 
 .text-left {
   text-align: left; }
 
 .text-right {
   text-align: right; }
+
+.text-sm {
+  font-size: 0.9em; }
+
+.color-white {
+  color: #fff; }
 
 .color-primary {
   color: #6200EA; }
@@ -166,3 +193,33 @@ table {
   .btn-normal:hover {
     background-color: #fff;
     color: #6200EA; }
+
+.btn-attach {
+  width: 100%; }
+
+.btn-transparent {
+  background: transparent; }
+
+.moto-card {
+  padding: 15px;
+  background: #5D5D5D;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  box-shadow: 0px 0px 3px 1px #d4d4d5; }
+  .moto-card .logo {
+    color: #fff;
+    font-family: Play; }
+  .moto-card .btn-attach {
+    background-color: #FF8300;
+    color: #fff;
+    border: 2px solid #FF8300; }
+    .moto-card .btn-attach:hover {
+      background-color: transparent;
+      color: #FF8300; }
+  .moto-card .btn-transparent {
+    border: 1px solid #FF8300;
+    color: #FF8300; }
+    .moto-card .btn-transparent:hover {
+      background: #FF8300;
+      color: #fff; }
