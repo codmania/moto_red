@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Play);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 $primary: #6200EA; // rgb(98, 0, 234)
 $light-primary: #5202C1;
@@ -53,6 +54,10 @@ body {
     text-align: right;
 }
 
+.text-bold {
+    font-weight: bold;
+}
+
 .text-sm {
     font-size: 0.9em;
 }
@@ -69,8 +74,16 @@ body {
     color: $alter;
 }
 
+.bg-white {
+    background-color: #fff;
+}
+
 .border-right {
     border-right: 1px solid $border;
+}
+
+.font-alter {
+    font-family: Raleway;
 }
 
 .tab-groups {
@@ -275,6 +288,7 @@ table {
 
 .btn-transparent {
     background: transparent;
+    width: 100%;
 }
 
 .moto-card {
@@ -288,6 +302,7 @@ table {
     .logo {
         color: #fff;
         font-family: Play;
+        text-align: center;
     }
 
     .btn-attach {
@@ -310,5 +325,98 @@ table {
             color: #fff;
         }
     }
+
+    &__head {
+        margin-top: -15px;
+        padding: 5px 0;
+    }
+
+    &__footer {
+        margin-bottom: -15px !important;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .full-width {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
 }
 
+.static-list {
+    list-style-type: none;
+
+    .item-group {
+        display: block;
+        width: 100%;
+        padding: 0;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            height: 15px;
+            display: block;
+            clear: both;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        &:last-child:after {
+            content: '';
+            height: 20px;
+            display: block;
+            clear: both;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        span.number {
+            padding: 0;
+            margin: 0;
+            width: 2.5em;
+            height: 3em;
+            font-size: 1em;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 3em;
+            color: #fff;
+            font-weight: bold;
+            display: block;
+            float: left;
+            background-color: rgba(98, 0, 234, 0.7);
+        }
+
+        img {
+            display: block;
+            float: left;
+            width: 3em;
+            height: 3em;
+        }
+
+        span.item-content {
+            display: block;
+            float: left;
+            position: relative;
+            width: calc(100% - 6.3em);
+            font-size: 1em;
+            line-height: 1.5em;
+            background-color: #5D5D5D;
+            color: #fff;
+            font-family: $font-normal;
+            padding: 0 5px;
+
+            strong {
+                font-weight: normal;
+                font-size: 0.9em;
+            }
+
+            span {
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
