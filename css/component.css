@@ -86,7 +86,6 @@ body {
     display: table-cell;
     position: relative;
     z-index: 2;
-    float: left;
     width: 100%;
     margin-bottom: 0; }
   .input-group input.form-control {
@@ -142,15 +141,28 @@ table {
   min-width: 100px;
   background-color: transparent;
   transition: all 0.4s ease-in-out 0s;
-  outline: none; }
+  outline: none;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase; }
 
 .btn-alter {
   position: relative;
   outline: none;
   background-color: #FF8300;
   border: 2px solid #FF8300;
-  color: #fff;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  color: #fff; }
   .btn-alter:hover {
     background-color: #fff;
     color: #FF8300; }
+
+.btn-normal {
+  position: relative;
+  outline: none;
+  background-color: #6200EA;
+  border: 2px solid #6200EA;
+  color: #fff; }
+  .btn-normal:hover {
+    background-color: #fff;
+    color: #6200EA; }

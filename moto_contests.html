@@ -162,10 +162,27 @@
         <div id="tabSupercross" class="uk-container uk-container-center tabcontent">
             <div id="tm-middle" class="tm-middle uk-grid" data-uk-grid-match="" data-uk-grid-margin="">
                 <div class="tm-main uk-width-medium-3-4 uk-push-1-4">
-                    <div class="table-search-input input-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="searchInput" onkeyup="tableSearch(0)">
-                        <i class="uk-icon-search"></i>
-                    </div>
+                    <table class="contests-header">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="table-search-input">
+                                        <input type="text" class="" placeholder="Search..." id="searchInput" onkeyup="tableSearch(0)">
+                                        <i class="uk-icon-search"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="moto-btn-wrap">
+                                        <div class="moto-btn-wrapper">
+                                            <button class="btn btn-normal">Create Contest</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                     <div class="table-responsive mt-20">
                         <table class="table table-striped table-contests moto-table" id="searchTable">

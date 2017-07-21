@@ -129,7 +129,6 @@ body {
         display: table-cell;
         position: relative;
         z-index: 2;
-        float: left;
         width: 100%;
         margin-bottom: 0;
     }
@@ -203,6 +202,10 @@ table {
     background-color: transparent;
     transition: all 0.4s ease-in-out 0s;
     outline: none;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: $font-normal;
+    text-transform: uppercase;
 }
 
 .btn-alter {
@@ -211,11 +214,24 @@ table {
     background-color: $alter;
     border: 2px solid $alter;
     color: #fff;
-    font-family: $font-normal;
 
     &:hover {
         background-color: #fff;
         color: $alter;
     }
 }
+
+.btn-normal {
+    position: relative;
+    outline: none;
+    background-color: $primary;
+    border: 2px solid $primary;
+    color: #fff;
+
+    &:hover {
+        background-color: #fff;
+        color: $primary;
+    }
+}
+
 
