@@ -200,7 +200,7 @@ table {
     padding: 7px 10px;
     min-width: 100px;
     background-color: transparent;
-    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: 400ms all;
     outline: none;
     font-size: 1em;
     font-weight: bold;

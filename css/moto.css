@@ -93,6 +93,9 @@
       -webkit-transform: skew(-33deg); }
     .contests-header .moto-btn-wrapper:hover:before {
       background: #fff; }
+    .contests-header .moto-btn-wrapper:hover .btn {
+      background: #fff;
+      color: #6200EA; }
   .contests-header .btn {
     width: 100%;
     border: 0;

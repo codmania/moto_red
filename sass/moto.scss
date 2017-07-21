@@ -142,6 +142,11 @@ $font-play: 'Play', sans-serif;
         &:hover:before {
             background: #fff;
         }
+
+        &:hover .btn {
+            background: #fff;
+            color: $primary;
+        }
     }
 
     .btn {
