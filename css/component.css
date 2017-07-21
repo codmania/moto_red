@@ -213,11 +213,12 @@ table {
 
 .moto-card {
   padding: 15px;
-  background: #5D5D5D;
+  background: url(../images/moto/racer.jpg) center center no-repeat;
+  background-size: cover;
   overflow: hidden;
   display: block;
   position: relative;
-  box-shadow: 0px 0px 3px 1px #d4d4d5; }
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2); }
   .moto-card .logo {
     color: #fff;
     font-family: Play;
