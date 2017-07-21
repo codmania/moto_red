@@ -10,16 +10,19 @@ body {
   margin-top: 10px; }
 
 .mt-20 {
-  margin-top: 20px; }
+  margin-top: 20px !important; }
 
 .mb-20 {
-  margin-bottom: 20px; }
+  margin-bottom: 20px !important; }
 
 .mb-100 {
   margin-bottom: 100px; }
 
 .ml-5 {
   margin-left: 5px; }
+
+.pb-20 {
+  padding-bottom: 20px !important; }
 
 .text-capital {
   text-transform: uppercase; }
@@ -218,7 +221,7 @@ table {
   overflow: hidden;
   display: block;
   position: relative;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2); }
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3); }
   .moto-card .logo {
     color: #fff;
     font-family: Play;
