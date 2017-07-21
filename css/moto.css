@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Play);
 .match-list-single .match-list-item .versus {
   color: #fff; }
 
@@ -16,23 +17,31 @@
   vertical-align: middle !important; }
 
 .table-contests {
-  background-color: #534540; }
+  background-color: #fff;
+  border: 1px solid #ddd; }
   .table-contests th,
   .table-contests td {
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    color: #fff; }
+    border-top: 1px solid #ddd; }
   .table-contests thead th {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
-    color: #FF8300; }
+    border-bottom: 2px solid #ddd;
+    color: #555; }
   .table-contests td {
-    color: #ccc;
-    text-align: center; }
+    color: #777;
+    text-align: center;
+    font-weight: bold; }
   .table-contests .col-contests {
-    text-align: left; }
+    text-align: left;
+    border-right: 1px solid #ddd; }
     .table-contests .col-contests span:not(.icon-status) {
-      color: #fff; }
+      color: #6200EA;
+      font-weight: bold;
+      font-size: 1.1em; }
   .table-contests span.icon-status {
     color: #FF8300;
     margin-right: 5px; }
   .table-contests .btn-alter {
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    font-weight: bold; }
+
+.head-news-title h1 {
+  font-family: Play; }

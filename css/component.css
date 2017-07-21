@@ -1,3 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Play);
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
 .text-capital {
   text-transform: uppercase; }
 
@@ -12,6 +16,9 @@
 
 .color-alter {
   color: #FF8300; }
+
+.border-right {
+  border-right: 1px solid #ddd; }
 
 .tab-groups button.tablinks {
   background-color: transparent;
@@ -124,17 +131,26 @@ table {
   vertical-align: bottom;
   border-bottom: 2px solid #eceeef; }
 
+.table-striped thead tr {
+  background-color: #eee; }
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #eee; }
+
 .btn {
   padding: 7px 10px;
   min-width: 100px;
   background-color: transparent;
-  color: #fff;
   transition: all 0.4s ease-in-out 0s;
   outline: none; }
 
 .btn-alter {
-  border: 1px solid #FF8300;
-  color: #FF8300; }
+  position: relative;
+  outline: none;
+  background-color: #FF8300;
+  border: 2px solid #FF8300;
+  color: #fff;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
   .btn-alter:hover {
-    background-color: #FF8300;
-    color: #fff; }
+    background-color: #fff;
+    color: #FF8300; }

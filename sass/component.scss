@@ -1,6 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Play);
+
 $primary: #6200EA; // rgb(98, 0, 234)
 $light-primary: #5202C1;
 $alter: #FF8300;
+
+$border: #ddd;
+
+$font-normal: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-play: 'Play', sans-serif;
+
+body {
+    font-family: $font-normal;
+}
 
 
 .text-capital {
@@ -21,6 +32,10 @@ $alter: #FF8300;
 
 .color-alter {
     color: $alter;
+}
+
+.border-right {
+    border-right: 1px solid $border;
 }
 
 .tab-groups {
@@ -171,22 +186,36 @@ table {
     border-bottom: 2px solid #eceeef;
 }
 
+
+.table-striped {
+    thead tr {
+        background-color: #eee;
+    }
+
+    tbody tr:nth-of-type(odd) {
+        background-color: #eee;
+    }
+}
+
 .btn {
     padding: 7px 10px;
     min-width: 100px;
     background-color: transparent;
-    color: #fff;
     transition: all 0.4s ease-in-out 0s;
     outline: none;
 }
 
 .btn-alter {
-    border: 1px solid $alter;
-    color: $alter;
+    position: relative;
+    outline: none;
+    background-color: $alter;
+    border: 2px solid $alter;
+    color: #fff;
+    font-family: $font-normal;
 
     &:hover {
-        background-color: $alter;
-        color: #fff;
+        background-color: #fff;
+        color: $alter;
     }
 }
 

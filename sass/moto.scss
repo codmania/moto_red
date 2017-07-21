@@ -1,6 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Play);
+
+
 $primary: #6200EA; // rgb(98, 0, 234)
 $light-primary: #5202C1;
 $alter: #FF8300;
+
+$border: #ddd;
+
+$font-normal: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-play: 'Play', sans-serif;
 
 .match-list-single {
     .match-list-item { 
@@ -29,29 +37,33 @@ $alter: #FF8300;
 }
 
 .table-contests {
-    background-color: #534540;
+    background-color: #fff;
+    border: 1px solid #ddd;
 
     th,
     td {
-        border-top: 1px solid rgba(255, 255, 255, 0.05);
-        color: #fff;
+        border-top: 1px solid #ddd;
     }
 
     thead th {
-        border-bottom: 2px solid rgba(255, 255, 255, 0.05);
-        color: $alter;
+        border-bottom: 2px solid #ddd;
+        color: #555;
     }
 
     td {
-        color: #ccc;
+        color: #777;
         text-align: center;
+        font-weight: bold;
     }
 
     .col-contests {
         text-align: left;
+        border-right: 1px solid #ddd;
 
         span:not(.icon-status) {
-            color: #fff;
+            color: $primary;
+            font-weight: bold;
+            font-size: 1.1em;
         }
     }
 
@@ -62,5 +74,10 @@ $alter: #FF8300;
 
     .btn-alter {
         font-size: 0.9em;
+        font-weight: bold;
     }
+}
+
+.head-news-title h1 {
+    font-family: Play;
 }
