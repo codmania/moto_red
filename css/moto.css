@@ -133,3 +133,9 @@
   .table-contests .btn-alter {
     font-size: 0.9em;
     font-weight: bold; }
+
+.uk-breadcrumb.tab-profile {
+  margin-bottom: 30px; }
+
+#tabSupercross .inline-tab {
+  margin-bottom: 20px; }

@@ -121,379 +121,404 @@
                 <li><button class="tablinks" onclick="openTab(event, 'tabMotocross')">Pro Motocross</button></li>
                 <li><button class="tablinks" onclick="openTab(event, 'tabMotoGP')">MotoGP</button></li>
                 <li><button class="tablinks" onclick="openTab(event, 'tabNascar')">NasCar</button></li>
-                <li><button class="tablinks" onclick="openTab(event, 'tabIndycar')">IndyCar</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'tabIndycar')">Formular 1</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'tabFormular')">IndyCar</button></li>
             </ul>
         </div>
 
         <div id="tabSupercross" class="uk-container uk-container-center tabcontent">
-            <div id="tm-middle" class="tm-middle uk-grid" data-uk-grid-match="" data-uk-grid-margin="">
-                <div class="tm-main uk-width-medium-3-4 uk-push-1-4">
-                    <table class="contests-header">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="table-search-input">
-                                        <input type="text" class="" placeholder="Search..." id="searchInput" onkeyup="tableSearch(0)">
-                                        <i class="uk-icon-search"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="moto-btn-wrap">
-                                        <div class="moto-btn-wrapper">
-                                            <button class="btn btn-normal">Create Contest</button>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
 
-                    <div class="table-responsive mt-20">
-                        <table class="table table-striped table-contests moto-table" id="searchTable">
-                            <thead>
-                                <tr>
-                                    <th class="text-capital border-right">
-                                        contest
-                                    </th>
-                                    <th class="text-capital">Sport</th>
-                                    <th class="text-capital">Entries</th>
-                                    <th class="text-capital">Entry Fee</th>
-                                    <th class="text-capital">Prizes</th>
-                                    <th class="text-capital">
-                                        Start Time
-                                    </th>
-                                    <th class="text-capital">
-                                        Join
-                                    </th>
-                                </tr>
-                            </thead>
+            <div class="inline-tab">
+                <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_all')" id="defaultSubTab">
+                    <span class="tab-title">All</span>
+                </button>
+                <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_group')">
+                    <span class="tab-title">Group Contests</span>
+                </button>
+                <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_head')">
+                    <span class="tab-title">Head to Heads</span>
+                </button>
+                <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_beginner')">
+                    <span class="tab-title">Beginner Contests</span>
+                </button>
+                <button class="tab-sublinks tab-with-intro text-capital" onclick="openSubTab(event, 'tabSupercross_leagues')">
+                    <span class="tab-title">Leagues</span>
+                </button>
+            </div>
+
+            <div id="tabSupercross_all" class="tab-subcontent">
+                <div id="tm-middle" class="tm-middle uk-grid" data-uk-grid-match="" data-uk-grid-margin="">
+                    <div class="tm-main uk-width-medium-3-4 uk-push-1-4">
+                        <table class="contests-header">
                             <tbody>
                                 <tr>
-                                    <td class="col-contests">
-                                        <span>SCOTT Sports A1 Challenge</span>
-                                    </td>
-                                    <td></td>
-                                    <td>$300</td>
-                                    <td>Free</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
                                     <td>
-                                        <button class="btn btn-alter">JOIN</button>
+                                        <div class="table-search-input">
+                                            <input type="text" class="" placeholder="Search..." id="searchInput" onkeyup="tableSearch(0)">
+                                            <i class="uk-icon-search"></i>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="col-contests">
-                                        <span>PulpMX Radio Show League</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">$300</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
                                     <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>DMXS Radio Show Series</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">$200</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>Yamaha Cup</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">Free</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>FMF Fantasy Supercross</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">$150</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>Racer X Fantasy Supercross</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">$100</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>Yamaha Cup</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">Free</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>DMXS Radio Show League</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">$100</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>SCOTT Sports A1 Challenge</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">Free</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>PulpMX Radio Show League</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">$300</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>DMXS Radio Show Series</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">$200</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>Yamaha Cup</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">Free</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>FMF Fantasy Supercross</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">$150</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>Racer X Fantasy Supercross Challenge</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">$100</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>Yamaha Cup</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">Free</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-contests">
-                                        <span>DMXS Radio Show League</span>
-                                    </td>
-                                    <td class="color-odd"></td>
-                                    <td>$300</td>
-                                    <td class="color-odd">$100</td>
-                                    <td>3</td>
-                                    <td class="text-sm text-meta">
-                                        <div class="contest-start"></div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-alter">JOIN</button>
+                                        <div class="moto-btn-wrap">
+                                            <div class="moto-btn-wrapper">
+                                                <button class="btn btn-normal">Create Contest</button>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+
+                        <div class="table-responsive mt-20">
+                            <table class="table table-striped table-contests moto-table" id="searchTable">
+                                <thead>
+                                    <tr>
+                                        <th class="text-capital border-right">
+                                            contest
+                                        </th>
+                                        <th class="text-capital">Sport</th>
+                                        <th class="text-capital">Entries</th>
+                                        <th class="text-capital">Entry Fee</th>
+                                        <th class="text-capital">Prizes</th>
+                                        <th class="text-capital">
+                                            Start Time
+                                        </th>
+                                        <th class="text-capital">
+                                            Join
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>SCOTT Sports A1 Challenge</span>
+                                        </td>
+                                        <td></td>
+                                        <td>$300</td>
+                                        <td>Free</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>PulpMX Radio Show League</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">$300</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>DMXS Radio Show Series</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">$200</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>Yamaha Cup</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">Free</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>FMF Fantasy Supercross</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">$150</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>Racer X Fantasy Supercross</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">$100</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>Yamaha Cup</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">Free</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>DMXS Radio Show League</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">$100</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>SCOTT Sports A1 Challenge</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">Free</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>PulpMX Radio Show League</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">$300</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>DMXS Radio Show Series</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">$200</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>Yamaha Cup</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">Free</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>FMF Fantasy Supercross</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">$150</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>Racer X Fantasy Supercross Challenge</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">$100</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>Yamaha Cup</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">Free</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-contests">
+                                            <span>DMXS Radio Show League</span>
+                                        </td>
+                                        <td class="color-odd"></td>
+                                        <td>$300</td>
+                                        <td class="color-odd">$100</td>
+                                        <td>3</td>
+                                        <td class="text-sm text-meta">
+                                            <div class="contest-start"></div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-alter">JOIN</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <aside class="tm-sidebar-a uk-width-medium-1-4 uk-pull-3-4 uk-row-first">
-                    <div class="uk-panel moto-card">
-                        <h3 class="logo">FantasyRaceHub</h3>
-                        <div class="mt-10">
-                            <button class="btn btn-attach">Create League</button>
-                            <button class="btn btn-attach mt-10">Create Contest</button>
-                        </div>
-                        <center class="mt-20">
-                            <span href="" class="text-sm color-white">Love FantasyRaceHub? Join us...</span>
-                        </center>
-                        <div class="mt-10 mb-20">
-                            <button class="btn btn-transparent text-low color-white">Sign up for our Newsletter</button>
-                        </div>
-                    </div>
-                    <div class="uk-panel moto-card">
-                        <div class="moto-card__head">
-                            <span class="text-bold color-white">Trending Racers</span>
-                        </div>
-                        <div class="moto-card__content full-width bg-white">
-                            <div class="static-list">
-                                <div class="item-group">
-                                    <span class="number">1</span>
-                                    <img class="avatar" src="images/Portfolios/profile.jpg" alt="Activity Picture">
-                                    <span class="item-content">
-                                        <strong>Marc Marguez</strong>
-                                        <br>
-                                        <span>33% Play Rate</span>
-                                    </span>
-                                </div>
-                                <div class="item-group">
-                                    <span class="number">2</span>
-                                    <img class="avatar" src="images/Portfolios/profile.jpg" alt="Activity Picture">
-                                    <span class="item-content">
-                                        <strong>Marc Marguez</strong>
-                                        <br>
-                                        <span>33% Play Rate</span>
-                                    </span>
-                                </div>
-                                <div class="item-group">
-                                    <span class="number">3</span>
-                                    <img class="avatar" src="images/Portfolios/profile.jpg" alt="Activity Picture">
-                                    <span class="item-content">
-                                        <strong>Marc Marguez</strong>
-                                        <br>
-                                        <span>33% Play Rate</span>
-                                    </span>
-                                </div>
-                                <div class="item-group">
-                                    <span class="number">4</span>
-                                    <img class="avatar" src="images/Portfolios/profile.jpg" alt="Activity Picture">
-                                    <span class="item-content">
-                                        <strong>Marc Marguez</strong>
-                                        <br>
-                                        <span>33% Play Rate</span>
-                                    </span>
-                                </div>
-                                <div class="item-group">
-                                    <span class="number">5</span>
-                                    <img class="avatar" src="images/Portfolios/profile.jpg" alt="Activity Picture">
-                                    <span class="item-content">
-                                        <strong>Marc Marguez</strong>
-                                        <br>
-                                        <span>33% Play Rate</span>
-                                    </span>
-                                </div>
+                    <aside class="tm-sidebar-a uk-width-medium-1-4 uk-pull-3-4 uk-row-first">
+                        <div class="uk-panel moto-card">
+                            <h3 class="logo">FantasyRaceHub</h3>
+                            <div class="mt-10">
+                                <button class="btn btn-attach">Create League</button>
+                                <button class="btn btn-attach mt-10">Create Contest</button>
+                            </div>
+                            <center class="mt-20">
+                                <span href="" class="text-sm color-white">Love FantasyRaceHub? Join us...</span>
+                            </center>
+                            <div class="mt-10 mb-20">
+                                <button class="btn btn-transparent text-low color-white">Sign up for our Newsletter</button>
                             </div>
                         </div>
-                        <div class="clearfix"></div>
-                        <div class="moto-card__footer text-right">
-                            <a href="#" class="color-white text-sm font-alter">
-                                FantasyRaceHub
-                            </a>
+                        <div class="uk-panel moto-card">
+                            <div class="moto-card__head">
+                                <span class="text-bold color-white">Trending Racers</span>
+                            </div>
+                            <div class="moto-card__content full-width bg-white">
+                                <div class="static-list">
+                                    <div class="item-group">
+                                        <span class="number">1</span>
+                                        <img class="avatar" src="images/Portfolios/profile.jpg" alt="Activity Picture">
+                                        <span class="item-content">
+                                            <strong>Marc Marguez</strong>
+                                            <br>
+                                            <span>33% Play Rate</span>
+                                        </span>
+                                    </div>
+                                    <div class="item-group">
+                                        <span class="number">2</span>
+                                        <img class="avatar" src="images/Portfolios/profile.jpg" alt="Activity Picture">
+                                        <span class="item-content">
+                                            <strong>Marc Marguez</strong>
+                                            <br>
+                                            <span>33% Play Rate</span>
+                                        </span>
+                                    </div>
+                                    <div class="item-group">
+                                        <span class="number">3</span>
+                                        <img class="avatar" src="images/Portfolios/profile.jpg" alt="Activity Picture">
+                                        <span class="item-content">
+                                            <strong>Marc Marguez</strong>
+                                            <br>
+                                            <span>33% Play Rate</span>
+                                        </span>
+                                    </div>
+                                    <div class="item-group">
+                                        <span class="number">4</span>
+                                        <img class="avatar" src="images/Portfolios/profile.jpg" alt="Activity Picture">
+                                        <span class="item-content">
+                                            <strong>Marc Marguez</strong>
+                                            <br>
+                                            <span>33% Play Rate</span>
+                                        </span>
+                                    </div>
+                                    <div class="item-group">
+                                        <span class="number">5</span>
+                                        <img class="avatar" src="images/Portfolios/profile.jpg" alt="Activity Picture">
+                                        <span class="item-content">
+                                            <strong>Marc Marguez</strong>
+                                            <br>
+                                            <span>33% Play Rate</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="moto-card__footer text-right">
+                                <a href="#" class="color-white text-sm font-alter">
+                                    FantasyRaceHub
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </aside>
+                    </aside>
+                </div>
+            </div>
+            <div id="tabSupercross_group" class="tab-subcontent">
+
             </div>
         </div>
 
         <div id="tabMotocross" class="uk-container uk-container-center tabcontent">
-            Yay Hoo
+
         </div>
 
         <div class="tm-bottom-e-box tm-full-width  ">
