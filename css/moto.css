@@ -139,3 +139,12 @@
 
 #tabSupercross .inline-tab {
   margin-bottom: 20px; }
+
+.match-view-wrap .match-moto .half {
+  width: auto; }
+
+.match-view-wrap .match-moto .versus {
+  background-color: transparent;
+  color: #fff;
+  font-size: 2em;
+  font-family: Play; }
