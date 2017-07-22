@@ -40,7 +40,7 @@ body {
   text-align: center; }
 
 .text-bold {
-  font-weight: bold; }
+  font-weight: bold !important; }
 
 .text-lg {
   font-size: 1.1em; }
@@ -420,3 +420,64 @@ table {
 
 .list.divided .item:not(:last-child) {
   border-bottom: 1px solid #ddd; }
+
+.btn-groups {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 0;
+  vertical-align: baseline;
+  margin: 0 .25em 0 0; }
+  .btn-groups:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .btn-groups .btn {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    margin: 0;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100px;
+    border: 0;
+    font-size: 14px;
+    padding: 10px; }
+  .btn-groups .or {
+    position: relative;
+    width: .3em;
+    height: 2.57142857em;
+    z-index: 3;
+    font-size: 1rem; }
+    .btn-groups .or:before {
+      position: absolute;
+      text-align: center;
+      border-radius: 500rem;
+      content: 'or';
+      top: 50%;
+      left: 50%;
+      background-color: #999;
+      text-shadow: none;
+      margin-top: -.89285714em;
+      margin-left: -.89285714em;
+      width: 1.78571429em;
+      height: 1.78571429em;
+      line-height: 1.78571429em;
+      color: rgba(0, 0, 0, 0.4);
+      font-style: normal;
+      font-weight: 700;
+      box-shadow: 0 0 0 1px transparent inset; }
+  .btn-groups .btn-cancel {
+    background-color: #534540;
+    color: #fff; }
+  .btn-groups .btn-save {
+    color: #fff;
+    background-color: #6200EA;
+    border-color: #6200EA; }

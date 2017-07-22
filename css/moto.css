@@ -163,7 +163,7 @@
 .moto-card .table-play th, .moto-card .table-play td {
   color: #fff;
   text-align: center;
-  border-color: #999; }
+  border-color: #555; }
 
 .moto-card .table-play th {
   text-transform: uppercase;
@@ -198,3 +198,75 @@
     text-align: center;
     line-height: 25px;
     border-radius: 3px; }
+  .mt-card .table-play {
+    border: 1px solid #ddd; }
+    .mt-card .table-play th, .mt-card .table-play td {
+      text-align: center;
+      font-weight: 600; }
+    .mt-card .table-play th {
+      text-transform: uppercase; }
+    .mt-card .table-play thead tr {
+      background-color: #eee; }
+
+.btn-select-racer {
+  font-weight: bold;
+  color: #999;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  padding: 10px;
+  font-size: 1.2em; }
+
+.button-cancel {
+  margin: 0;
+  height: 40px;
+  width: 100px;
+  line-height: 40px;
+  position: relative;
+  z-index: 1;
+  display: block;
+  float: left;
+  left: 0;
+  top: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px; }
+  .button-cancel::before {
+    font-size: 19px;
+    position: absolute;
+    color: #6200ea;
+    left: 50%;
+    margin-left: -4px; }
+  .button-cancel:last-child:before {
+    font-size: 19px;
+    position: absolute;
+    color: #534540;
+    left: 50%;
+    margin-left: -4px; }
+  .button-cancel:last-child:hover {
+    color: #534540; }
+  .button-cancel:last-child:after {
+    content: '';
+    width: 400%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transform: skew(-33deg);
+    background: #6200ea; }
+
+.moto-card .our-awards-btn {
+  height: 40px;
+  position: relative;
+  right: 0;
+  margin-right: 0; }
+
+.moto-card .our-awards-main-wrap {
+  padding: 0;
+  display: block;
+  position: relative; }
