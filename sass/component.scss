@@ -51,7 +51,7 @@ body {
 }
 
 .text-left {
-    text-align: left;
+    text-align: left !important;
 }
 
 .text-right {
@@ -66,6 +66,10 @@ body {
     font-weight: bold;
 }
 
+.text-lg {
+    font-size: 1.1em;
+}
+
 .text-sm {
     font-size: 0.9em;
 }
@@ -75,11 +79,11 @@ body {
 }
 
 .color-primary {
-    color: $primary;
+    color: $primary !important;
 }
 
 .color-alter {
-    color: $alter;
+    color: $alter !important;
 }
 
 .bg-white {
@@ -92,6 +96,16 @@ body {
 
 .font-alter {
     font-family: Raleway;
+}
+
+.success {
+    color: #5cb85c;
+}
+.normal {
+    color: #6200ea;
+}
+.danger {
+    color: #d9534f;
 }
 
 .tab-groups {
@@ -232,7 +246,7 @@ table {
 
 .table th, .table td {
     padding: 0.75rem;
-    vertical-align: top;
+    vertical-align: middle;
     border-top: 1px solid #eceeef;
 }
 
@@ -272,8 +286,19 @@ table {
     color: #fff;
 
     &:hover {
-        background-color: #fff;
+        background-color: transparent;
         color: $alter;
+    }
+}
+
+.btn-alter.invert {
+    border: 2px solid $alter;
+    background-color: transparent;
+    color: $alter;
+
+    &:hover {
+        background-color: $alter;
+        color: #fff;
     }
 }
 
@@ -514,3 +539,32 @@ table {
         font-family: $font-normal;
     }
 }
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    .item {
+        display: list-item;
+        table-layout: fixed;
+        list-style-type: none;
+        list-style-position: outside;
+        padding: 0;
+        line-height: 1.2em;
+        margin: 0;
+        padding: 10px 0;
+
+        .content {
+            display: table-cell;
+            padding: 0em 0em 0em 0.5em;
+            vertical-align: middle;
+            color: #999;
+        }
+    }
+}
+
+.list.divided .item:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+

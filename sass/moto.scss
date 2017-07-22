@@ -230,4 +230,71 @@ $font-play: 'Play', sans-serif;
     }
 }
 
+.moto-card__legend {
+    font-family: "Play", sans-serif;
+    color: $alter;
+    font-weight: bold;
+
+    a {
+        color: $primary;
+        font-size: 1.5em;
+    }
+}
+
+.card-fixed {
+    min-height: 600px;
+}
+
+.moto-card {
+    .table-play {
+        th, td {
+            color: #fff;
+            text-align: center;
+            border-color: #999;
+        }
+
+        th {
+            text-transform: uppercase;
+            color: $primary;
+        }
+
+        .icon-status {
+            font-size: 1.5em;
+        }
+    }
+}
+
+.mt-card {
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid #ddd;
+
+    &__title {
+        padding: 10px 15px;
+        font-size: 1.5em;
+        color: #333;
+        font-weight: bold;
+    }
+
+    &__content {
+        padding: 15px;
+        position: relative;
+    }
+
+    .item .icon-status {
+        font-size: 1.5em;
+        display: table-cell;
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        margin: 0;
+        background-color: #eee;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 25px;
+        border-radius: 3px;
+    }
+}
 
