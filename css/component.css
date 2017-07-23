@@ -481,3 +481,6 @@ table {
     color: #fff;
     background-color: #6200EA;
     border-color: #6200EA; }
+
+hr {
+  margin: 10px 0; }
