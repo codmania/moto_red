@@ -283,6 +283,93 @@ $font-play: 'Play', sans-serif;
         position: relative;
     }
 
+    &__image {
+        display: block;
+        position: relative;
+        width: 100%;
+
+        img {
+            width: 100%;
+            z-index: 3;
+            -webkit-transition: all .4s ease-in-out 0s;
+            -moz-transition: all .4s ease-in-out 0s;
+            -o-transition: all .4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s;
+        }
+
+        .img-overlay {
+            transition: all 0.4s ease-in-out 0s;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 2;
+            text-align: center;
+            background-color: rgba(123, 50, 223, 0.85);
+
+            .animation {
+                position: relative;
+                top: 40%;
+                -webkit-transition: all .4s ease-in-out 0s;
+                -moz-transition: all .4s ease-in-out 0s;
+                -o-transition: all .4s ease-in-out 0s;
+                transition: all 0.4s ease-in-out 0s;
+                transform: scale(0.2);
+                -webkit-transform: scale(0.2);
+                -moz-transform: scale(0.2);
+                -o-transform: scale(0.2);
+            }
+        }
+
+        .btn-change-image {
+            border: 2px solid #fff;
+            background-color: transparent;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 0;
+            position: relative;
+
+            &:hover {
+                background: #fff;
+                color: $primary;
+                -webkit-transition: background .8s;
+                transition: background .8s;
+            }
+        }
+
+        &:hover .img-overlay {
+            opacity: 1;
+
+            .animation {
+                top: 40%;
+                position: relative;
+                transform: scale(1);
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                -o-transform: scale(1);
+            }
+        }
+    }
+
+    &__subheader {
+        font-size: 18px;
+        line-height: 1.5em;
+        color: #555;
+        margin-top: 7px;
+    }
+
+    &__description {
+        font-size: 1em;
+        font-weight: bold;
+        white-space: normal;
+        line-height: 1.2em;
+        color: #555;
+        margin-top: 10px;
+    }
+
     .item .icon-status {
         font-size: 1.5em;
         display: table-cell;
@@ -391,3 +478,55 @@ $font-play: 'Play', sans-serif;
         position: relative;
     }
 }
+
+table.user-info {
+    border: 0;
+
+    th, td {
+        border: 1px solid #eceeef;
+    }
+
+    td:first-child {
+        border-left: 0;
+    }
+
+    td:last-child {
+        border-right: 0;
+    }
+
+    td div {
+        color: #555;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    td span {
+        font-weight: normal;
+        color: #777;
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+}
+
+table.table-rating {
+    th, td {
+        text-align: left;
+    }
+
+    th {
+        font-size: 15px;
+        color: #777;
+        font-family: $font-normal;
+    }
+
+    td.rating {
+        .uk-icon-star {
+            color: $alter;
+        }
+    }
+}
+
+.player-single .number {
+    color: #fff;
+}
+

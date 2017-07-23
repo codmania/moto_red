@@ -3,6 +3,9 @@
 body {
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
+.mt-0 {
+  margin-top: 0px; }
+
 .mt-5 {
   margin-top: 5px; }
 
@@ -484,3 +487,11 @@ table {
 
 hr {
   margin: 10px 0; }
+
+.label {
+  padding: 2px 5px; }
+
+.label.label-success {
+  background-color: #5cb85c;
+  color: #fff;
+  font-weight: bold; }
