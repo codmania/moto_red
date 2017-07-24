@@ -253,6 +253,10 @@
     line-height: 1.2em;
     color: #555;
     margin-top: 10px; }
+  .mt-card__link {
+    font-size: 1.1em;
+    color: #FF8300;
+    font-weight: bold; }
   .mt-card .item .icon-status {
     font-size: 1.5em;
     display: table-cell;
@@ -369,3 +373,8 @@ table.table-rating td.rating .uk-icon-star {
 
 .player-single .number {
   color: #fff; }
+
+.uk-container .activity-wrap {
+  font-size: 100%; }
+  .uk-container .activity-wrap .text-meta {
+    font-style: italic; }
