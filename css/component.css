@@ -429,8 +429,7 @@ table {
     .list .item img {
       display: inline-block;
       width: 2.5em;
-      height: 2.5em;
-      border-radius: 500rem; }
+      height: 2.5em; }
 
 .list.divided .item:not(:last-child) {
   border-bottom: 1px solid #ddd; }
