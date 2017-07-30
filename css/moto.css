@@ -382,3 +382,9 @@ table.table-rating td.rating .uk-icon-star {
 .acymailing_form tr td input[type="submit"] {
   border: 0;
   color: #fff; }
+
+.progress-group p {
+  margin-bottom: 5px; }
+
+.progress-group .uk-progress {
+  margin-top: 0; }
