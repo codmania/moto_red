@@ -378,3 +378,7 @@ table.table-rating td.rating .uk-icon-star {
   font-size: 100%; }
   .uk-container .activity-wrap .text-meta {
     font-style: italic; }
+
+.acymailing_form tr td input[type="submit"] {
+  border: 0;
+  color: #fff; }
