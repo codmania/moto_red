@@ -93,3 +93,37 @@ function tableSearch(index) {
     }
 }
 
+function checkOpponent(evt) {
+    var elWrap, elements;
+
+    elWrap = document.getElementById("contest_opponent");
+    elements = elWrap.getElementsByClassName("btn-normal");
+
+    for (var i = 0; i < elements.length; i ++) {
+        elements[i].className = elements[i].className.replace(" active", "");
+    }
+
+    evt.currentTarget.className += " active";
+}
+
+if (document.getElementById("defaultOpponent")) {
+    document.getElementById("defaultOpponent").click();
+}
+
+function checkType(evt) {
+    var elWrap, elements;
+
+    elWrap = document.getElementById("contest_type");
+    elements = elWrap.getElementsByClassName("btn-normal");
+
+    for (var i = 0; i < elements.length; i ++) {
+        elements[i].className = elements[i].className.replace(" active", "");
+    }
+
+    evt.currentTarget.className += " active";
+}
+
+if (document.getElementById("defaultType")) {
+    document.getElementById("defaultType").click();
+}
+

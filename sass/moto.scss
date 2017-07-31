@@ -184,101 +184,43 @@ $font-play: 'Play', sans-serif;
         position: relative;
         border-right: 1px solid #6200ea;
         display: block;
-
-        &:before {
-            content: '';
-            position: absolute;
-            border: 1px solid #6200ea;
-            transform: skew(-33deg);
-            -webkit-transform: skew(-33deg);
-            top: 0;
-            bottom: 0;
-            left: -17px;
-            right: -20px;
-        }
     }
 
     .moto-btn-wrapper {
         position: relative;
         display: block;
-
-        &:before {
-            content: '';
-            position: absolute;
-            left: -15px;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-            transition: 400ms all;
-            -webkit-transition: 400ms all;
-            background: #6200ea;
-            transform: skew(-33deg);
-            -webkit-transform: skew(-33deg);
-        }
-
-        &:hover:before {
-            background: #fff;
-        }
-
-        &:hover .btn {
-            background: #fff;
-            color: $primary;
-        }
-    }
-
-    .moto-btn-wrap-left {
-        padding: 2px 0px 2px 1px;
-        position: relative;
-        border-left: 1px solid #6200ea;
-        display: block;
-
-        &:before {
-            content: '';
-            position: absolute;
-            border: 1px solid #6200ea;
-            transform: skew(-33deg);
-            -webkit-transform: skew(-33deg);
-            top: 0;
-            bottom: 0;
-            left: -17px;
-            right: -20px;
-        }
-    }
-
-    .moto-btn-wrapper-left {
-        position: relative;
-        display: block;
-
-        &:before {
-            content: '';
-            position: absolute;
-            left: 18px;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-            transition: 400ms all;
-            -webkit-transition: 400ms all;
-            background: #6200ea;
-            transform: skew(-33deg);
-            -webkit-transform: skew(-33deg);
-        }
-
-        &:hover:before {
-            background: #fff;
-        }
-
-        &:hover .btn {
-            background: #fff;
-            color: $primary;
-        }
     }
 
     .btn {
         width: 100%;
-        border: 0;
         padding: 10px;
     }
 
+    .btn-normal {
+        background-color: transparent;
+        color: #999;
+        border-color: transparent;
+    }
+
+    .btn-normal.active {
+        background-color: transparent;
+        color: $primary;
+        border: 2px solid $primary;
+
+        span {
+            position: relative;
+        }
+
+        span:before {
+            content: "\2713";
+            width: 16px;
+            height: 16px;
+            // background: url(../images/player-total-ul-bg.png) no-repeat;
+            position: absolute;
+            top: 0;
+            left: -20px;
+        }
+    }
 }
 
 .head-news-title h1 {
@@ -687,5 +629,21 @@ table.table-rating {
     &:hover,
     &:focus {
         outline: none !important;
+    }
+}
+
+.tabs-switch-top li a {
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    min-width: 120px;
+}
+
+.check-btns {
+    padding: 10px;
+    background-color: #eee;
+
+    table {
+        margin-bottom: 0;
     }
 }
