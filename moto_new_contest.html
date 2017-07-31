@@ -84,6 +84,9 @@
                         <div class="uk-panel">
                             <div class="uk-cover-background uk-position-relative head-wrap" style="height: 290px; background-image: url('images/head-bg.jpg');">
                                 <img class="uk-invisible" src="images/head-bg.jpg" alt="" height="290" width="1920">
+                                <div class="uk-position-cover uk-flex uk-flex-center head-title">
+                                    <h1>New Contest</h1>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -107,50 +110,95 @@
                     <div class="uk-width-1-1 uk-row-first">
                         <div class="uk-panel">
                             <div class="our-history-wrap">
-                                <div class="our-history-title">
-                                    <h2>New <span>Contest</span></h2>
-                                </div>
-                                <div class="our-history-top">
-                                    <div class="uk-container uk-container-center">
-                                        <div class="uk-grid">
-                                            <!-- This is the container of the toggling elements -->
-                                            <ul class="our-history-timeline" data-uk-switcher="{connect:'#our-history'}">
-                                                <li class="uk-active" aria-expanded="true"><a href="/">2013</a>
-                                                </li>
-                                                <li aria-expanded="false"><a href="/">2014</a>
-                                                </li>
-                                                <li aria-expanded="false"><a href="/">2015</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="uk-container uk-container-center">
                                     <div class="uk-grid">
                                         <!-- This is the container of the content items -->
-                                        <ul id="our-history" class="uk-switcher uk-container uk-container-center">
-                                            <li aria-hidden="false" class="uk-grid uk-active">
-                                                <div class="uk-width-medium-4-10">
-                                                    <h3 class="history-title">Maecenas <span>dapibus</span></h3>
+                                        <ul id="our-history" class="uk-switcher uk-container uk-container-center pt-0">
+                                            <li class="uk-grid uk-active">
+                                                <div class="uk-width-12-12">
+                                                    <h3 class="history-title"><span>Sport</span></h3>
                                                     <!-- This is the container of the toggling elements -->
                                                     <ul class="tabs-switch-top" data-uk-switcher="{connect:'#tab-switch'}">
-                                                        <li class="uk-active" aria-expanded="true"><a href="/">Lorem</a>
+                                                        <li class="uk-active" aria-expanded="true"><a href="/">Supercross</a>
                                                         </li>
-                                                        <li aria-expanded="false"><a href="/">Ipsum</a>
+                                                        <li aria-expanded="false"><a href="/">Pro Motocross</a>
                                                         </li>
-                                                        <li aria-expanded="false"><a href="/">Dolor</a>
+                                                        <li aria-expanded="false"><a href="/">MotoGP</a>
+                                                        </li>
+                                                        <li aria-expanded="false"><a href="/">IndyCar</a>
+                                                        </li>
+                                                        <li aria-expanded="false"><a href="/">NASCAR</a>
                                                         </li>
                                                     </ul>
 
                                                     <!-- This is the container of the content items -->
                                                     <ul id="tab-switch" class="uk-switcher tabs-switch-bottom">
                                                         <li class="uk-active" aria-hidden="false">
-                                                            <p>Lorem nibh eu urna posuere laoreet. Sed luctus dignissim aliquet. Ut nec nisl porttitor, ornare turpis quis, accumsan dolor.</p>
-                                                            <ul>
-                                                                <li>Nunc commodo ipsum ac mi;</li>
-                                                                <li>Curabitur bibendum odio eu orci;</li>
-                                                                <li>Morbi tincidunt lacus a pulvinar;</li>
-                                                            </ul>
+                                                            <div class="uk-grid">
+                                                                <div class="uk-width-1-2">
+                                                                    <div class="text-default text-lg text-bold mb-5">Select Your Race</div>
+                                                                    <div class="uk-form-select" data-uk-form-select>
+                                                                        <span></span>
+                                                                        <select>
+                                                                            <option value="">Mon May 2nd 7:05pm ET(Main)</option>
+                                                                            <option value="">Tue May 3rd 10:00am ET</option>
+                                                                            <option value="">Wed Jul 15th 5:00pm PST</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="uk-grid">
+                                                                <div class="uk-width-1-2">
+                                                                    <div class="text-default text-lg text-bold mb-5">Contest Type</div>
+                                                                    <table class="moto-btn-group">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="moto-btn-wrap-left">
+                                                                                        <div class="moto-btn-wrapper-left">
+                                                                                            <button class="btn btn-normal">Head to Head</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="moto-btn-wrap">
+                                                                                        <div class="moto-btn-wrapper">
+                                                                                            <button class="btn btn-normal">Group</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="uk-width-1-2">
+                                                                    <div class="text-default text-lg text-bold mb-5">Opponent</div>
+                                                                    <table class="moto-btn-group">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="moto-btn-wrap-left">
+                                                                                        <div class="moto-btn-wrapper-left">
+                                                                                            <button class="btn btn-normal">Public</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="moto-btn-wrap">
+                                                                                        <div class="moto-btn-wrapper">
+                                                                                            <button class="btn btn-normal">Private</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
                                                         </li>
                                                         <li aria-hidden="true">
                                                             <p>Ipsum nibh eu urna posuere laoreet. Sed luctus dignissim aliquet. Ut nec nisl porttitor, ornare turpis quis, accumsan dolor.</p>
@@ -168,78 +216,8 @@
                                                                 <li>Morbi tincidunt lacus a pulvinar;</li>
                                                             </ul>
                                                         </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="uk-width-medium-4-10">
-                                                    <h3 class="history-title">Praesent <span>dictum</span></h3>
-                                                    <div class="uk-accordion" data-uk-accordion="">
-
-                                                        <h4 class="uk-accordion-title uk-active">Nunc et diam a nunc venenatis fermentum <span class="arrow"><i class="uk-icon-arrow-right"></i></span></h4>
-                                                        <div aria-expanded="true" data-wrapper="true" role="list" style="height: auto; position: relative;">
-                                                            <div class="uk-accordion-content uk-active">Phasellus sagittis venenatis suscipit. Donec vehicula aliquam neque. Aenean lobortis tellus ut tortor ornare, eu pharetra magna faucibus.</div>
-                                                        </div>
-
-                                                        <h4 class="uk-accordion-title">Nulla quis est pretium, commodo tortor ac<span class="arrow"><i class="uk-icon-arrow-right"></i></span></h4>
-                                                        <div aria-expanded="false" data-wrapper="true" role="list" style="overflow:hidden;height:0;position:relative;">
-                                                            <div class="uk-accordion-content">Phasellus sagittis venenatis suscipit. Donec vehicula aliquam neque. Aenean lobortis tellus ut tortor ornare, eu pharetra magna faucibus.</div>
-                                                        </div>
-
-                                                        <h4 class="uk-accordion-title">Vestibulum a arcu vitae dui faucibus euismod<span class="arrow"><i class="uk-icon-arrow-right"></i></span></h4>
-                                                        <div aria-expanded="false" data-wrapper="true" role="list" style="overflow:hidden;height:0;position:relative;">
-                                                            <div class="uk-accordion-content">Phasellus sagittis venenatis suscipit. Donec vehicula aliquam neque. Aenean lobortis tellus ut tortor ornare, eu pharetra magna faucibus.</div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div class="uk-width-medium-2-10">
-                                                    <h3 class="history-title">Statistic</h3>
-                                                    <table class="stat-table">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Games</td>
-                                                                <td>8</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Goals</td>
-                                                                <td>15</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Awards</td>
-                                                                <td>3</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Violations</td>
-                                                                <td>7</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </li>
-                                            <li aria-hidden="true" class="uk-grid">
-                                                <div class="uk-width-medium-4-10 uk-width-small-1-1">
-                                                    <h3 class="history-title">Praesent <span>dictum</span></h3>
-                                                    <!-- This is the container of the toggling elements -->
-                                                    <ul class="tabs-switch-top" data-uk-switcher="{connect:'#tab-switch1'}">
-                                                        <li class="uk-active" aria-expanded="true"><a href="/">Lorem</a>
-                                                        </li>
-                                                        <li aria-expanded="false"><a href="/">Ipsum</a>
-                                                        </li>
-                                                        <li aria-expanded="false"><a href="/">Dolor</a>
-                                                        </li>
-                                                    </ul>
-
-                                                    <!-- This is the container of the content items -->
-                                                    <ul id="tab-switch1" class="uk-switcher tabs-switch-bottom">
-                                                        <li class="uk-active" aria-hidden="false">
-                                                            <p>Lorem nibh eu urna posuere laoreet. Sed luctus dignissim aliquet. Ut nec nisl porttitor, ornare turpis quis, accumsan dolor.</p>
-                                                            <ul>
-                                                                <li>Nunc commodo ipsum ac mi;</li>
-                                                                <li>Curabitur bibendum odio eu orci;</li>
-                                                                <li>Morbi tincidunt lacus a pulvinar;</li>
-                                                            </ul>
-                                                        </li>
                                                         <li aria-hidden="true">
-                                                            <p>Ipsum nibh eu urna posuere laoreet. Sed luctus dignissim aliquet. Ut nec nisl porttitor, ornare turpis quis, accumsan dolor.</p>
+                                                            <p>In eu nibh eu urna posuere laoreet. Sed luctus dignissim aliquet. Ut nec nisl porttitor, ornare turpis quis, accumsan dolor.</p>
                                                             <ul>
                                                                 <li>Nunc commodo ipsum ac mi;</li>
                                                                 <li>Curabitur bibendum odio eu orci;</li>
@@ -255,136 +233,10 @@
                                                             </ul>
                                                         </li>
                                                     </ul>
-                                                </div>
-                                                <div class="uk-width-medium-4-10 uk-width-small-1-1">
-                                                    <h3 class="history-title">Maecenas <span>dapibus</span></h3>
-                                                    <div class="uk-accordion" data-uk-accordion="">
 
-                                                        <h4 class="uk-accordion-title uk-active">Nunc et diam a nunc venenatis fermentum <span class="arrow"><i class="uk-icon-arrow-right"></i></span></h4>
-                                                        <div aria-expanded="true" data-wrapper="true" role="list" style="height: auto; position: relative;">
-                                                            <div class="uk-accordion-content uk-active">Phasellus sagittis venenatis suscipit. Donec vehicula aliquam neque. Aenean lobortis tellus ut tortor ornare, eu pharetra magna faucibus.</div>
-                                                        </div>
-
-                                                        <h4 class="uk-accordion-title">Nulla quis est pretium, commodo tortor ac<span class="arrow"><i class="uk-icon-arrow-right"></i></span></h4>
-                                                        <div aria-expanded="false" data-wrapper="true" role="list" style="overflow:hidden;height:0;position:relative;">
-                                                            <div class="uk-accordion-content">Phasellus sagittis venenatis suscipit. Donec vehicula aliquam neque. Aenean lobortis tellus ut tortor ornare, eu pharetra magna faucibus.</div>
-                                                        </div>
-
-                                                        <h4 class="uk-accordion-title">Vestibulum a arcu vitae dui faucibus euismod<span class="arrow"><i class="uk-icon-arrow-right"></i></span></h4>
-                                                        <div aria-expanded="false" data-wrapper="true" role="list" style="overflow:hidden;height:0;position:relative;">
-                                                            <div class="uk-accordion-content">Phasellus sagittis venenatis suscipit. Donec vehicula aliquam neque. Aenean lobortis tellus ut tortor ornare, eu pharetra magna faucibus.</div>
-                                                        </div>
-
+                                                    <div class="text-right">
+                                                        <button class="btn btn-normal">Create a Contest</button>
                                                     </div>
-                                                </div>
-                                                <div class="uk-width-medium-2-10 uk-width-small-1-1">
-                                                    <h3 class="history-title">Statistic</h3>
-                                                    <table class="stat-table">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Games</td>
-                                                                <td>8</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Goals</td>
-                                                                <td>15</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Awards</td>
-                                                                <td>3</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Violations</td>
-                                                                <td>7</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </li>
-                                            <li aria-hidden="true" class="uk-grid">
-                                                <div class="uk-width-medium-4-10">
-                                                    <h3 class="history-title">Maecenas <span>dapibus</span></h3>
-                                                    <!-- This is the container of the toggling elements -->
-                                                    <ul class="tabs-switch-top" data-uk-switcher="{connect:'#tab-switch2'}">
-                                                        <li class="uk-active" aria-expanded="true"><a href="/">Lorem</a>
-                                                        </li>
-                                                        <li aria-expanded="false"><a href="/">Ipsum</a>
-                                                        </li>
-                                                        <li aria-expanded="false"><a href="/">Dolor</a>
-                                                        </li>
-                                                    </ul>
-
-                                                    <!-- This is the container of the content items -->
-                                                    <ul id="tab-switch2" class="uk-switcher tabs-switch-bottom">
-                                                        <li class="uk-active" aria-hidden="false">
-                                                            <p>Lorem nibh eu urna posuere laoreet. Sed luctus dignissim aliquet. Ut nec nisl porttitor, ornare turpis quis, accumsan dolor.</p>
-                                                            <ul>
-                                                                <li>Nunc commodo ipsum ac mi;</li>
-                                                                <li>Curabitur bibendum odio eu orci;</li>
-                                                                <li>Morbi tincidunt lacus a pulvinar;</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li aria-hidden="true">
-                                                            <p>Ipsum nibh eu urna posuere laoreet. Sed luctus dignissim aliquet. Ut nec nisl porttitor, ornare turpis quis, accumsan dolor.</p>
-                                                            <ul>
-                                                                <li>Nunc commodo ipsum ac mi;</li>
-                                                                <li>Curabitur bibendum odio eu orci;</li>
-                                                                <li>Morbi tincidunt lacus a pulvinar;</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li aria-hidden="true">
-                                                            <p>In eu nibh eu urna posuere laoreet. Sed luctus dignissim aliquet. Ut nec nisl porttitor, ornare turpis quis, accumsan dolor.</p>
-                                                            <ul>
-                                                                <li>Nunc commodo ipsum ac mi;</li>
-                                                                <li>Curabitur bibendum odio eu orci;</li>
-                                                                <li>Morbi tincidunt lacus a pulvinar;</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="uk-width-medium-4-10">
-                                                    <h3 class="history-title">Praesent <span>dictum</span></h3>
-                                                    <div class="uk-accordion" data-uk-accordion="">
-
-                                                        <h4 class="uk-accordion-title uk-active">Nunc et diam a nunc venenatis fermentum <span class="arrow"><i class="uk-icon-arrow-right"></i></span></h4>
-                                                        <div aria-expanded="true" data-wrapper="true" role="list" style="height: auto; position: relative;">
-                                                            <div class="uk-accordion-content uk-active">Phasellus sagittis venenatis suscipit. Donec vehicula aliquam neque. Aenean lobortis tellus ut tortor ornare, eu pharetra magna faucibus.</div>
-                                                        </div>
-
-                                                        <h4 class="uk-accordion-title">Nulla quis est pretium, commodo tortor ac<span class="arrow"><i class="uk-icon-arrow-right"></i></span></h4>
-                                                        <div aria-expanded="false" data-wrapper="true" role="list" style="overflow:hidden;height:0;position:relative;">
-                                                            <div class="uk-accordion-content">Phasellus sagittis venenatis suscipit. Donec vehicula aliquam neque. Aenean lobortis tellus ut tortor ornare, eu pharetra magna faucibus.</div>
-                                                        </div>
-
-                                                        <h4 class="uk-accordion-title">Vestibulum a arcu vitae dui faucibus euismod<span class="arrow"><i class="uk-icon-arrow-right"></i></span></h4>
-                                                        <div aria-expanded="false" data-wrapper="true" role="list" style="overflow:hidden;height:0;position:relative;">
-                                                            <div class="uk-accordion-content">Phasellus sagittis venenatis suscipit. Donec vehicula aliquam neque. Aenean lobortis tellus ut tortor ornare, eu pharetra magna faucibus.</div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div class="uk-width-medium-2-10">
-                                                    <h3 class="history-title">Statistic</h3>
-                                                    <table class="stat-table">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Games</td>
-                                                                <td>8</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Goals</td>
-                                                                <td>15</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Awards</td>
-                                                                <td>3</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Violations</td>
-                                                                <td>7</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
                                                 </div>
                                             </li>
                                         </ul>

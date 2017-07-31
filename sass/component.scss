@@ -34,6 +34,10 @@ body {
     margin-bottom: 0 !important;
 }
 
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+
 .mb-20 {
     margin-bottom: 20px !important;
 }
@@ -48,6 +52,10 @@ body {
 
 .ml-10 {
     margin-left: 10px;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
 }
 
 .pb-20 {
@@ -685,5 +693,24 @@ hr {
     background-color: #5cb85c;
     color: #fff;
     font-weight: bold;
+}
+
+select {
+    height: 40px;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    font-family: $font-normal;
+    color: #555;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        border-color: $primary;
+        transition: all .4s ease-in-out 0s;
+    }
 }
 

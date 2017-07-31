@@ -34,7 +34,8 @@
       border: 1px solid #646464;
       transform: skew(-33deg);
       -webkit-transform: skew(-33deg); }
-    .contests-header .table-search-input input[type="text"] {
+    .contests-header .table-search-input input[type="text"],
+    .contests-header .table-search-input button.right {
       padding-left: 35px;
       margin: 0;
       width: 100% !important;
@@ -49,10 +50,12 @@
       color: #555;
       font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       transition: all 0.4s ease-in-out 0s; }
-      .contests-header .table-search-input input[type="text"]:hover {
+      .contests-header .table-search-input input[type="text"]:hover,
+      .contests-header .table-search-input button.right:hover {
         outline: none;
         border-color: #6200EA; }
-      .contests-header .table-search-input input[type="text"]:focus {
+      .contests-header .table-search-input input[type="text"]:focus,
+      .contests-header .table-search-input button.right:focus {
         outline: none; }
     .contests-header .table-search-input i.uk-icon-search {
       position: absolute;
@@ -97,6 +100,95 @@
       background: #fff;
       color: #6200EA; }
   .contests-header .btn {
+    width: 100%;
+    border: 0;
+    padding: 10px; }
+
+.moto-btn-group {
+  width: 100%;
+  overflow: hidden; }
+  .moto-btn-group tbody tr {
+    width: 46%;
+    float: right; }
+  .moto-btn-group tbody tr:first-child {
+    width: 46%;
+    float: left; }
+  .moto-btn-group tr td {
+    width: 100%;
+    display: block;
+    float: left;
+    padding: 0; }
+  .moto-btn-group .moto-btn-wrap {
+    padding: 2px 1px 2px 0;
+    position: relative;
+    border-right: 1px solid #6200ea;
+    display: block; }
+    .moto-btn-group .moto-btn-wrap:before {
+      content: '';
+      position: absolute;
+      border: 1px solid #6200ea;
+      transform: skew(-33deg);
+      -webkit-transform: skew(-33deg);
+      top: 0;
+      bottom: 0;
+      left: -17px;
+      right: -20px; }
+  .moto-btn-group .moto-btn-wrapper {
+    position: relative;
+    display: block; }
+    .moto-btn-group .moto-btn-wrapper:before {
+      content: '';
+      position: absolute;
+      left: -15px;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      transition: 400ms all;
+      -webkit-transition: 400ms all;
+      background: #6200ea;
+      transform: skew(-33deg);
+      -webkit-transform: skew(-33deg); }
+    .moto-btn-group .moto-btn-wrapper:hover:before {
+      background: #fff; }
+    .moto-btn-group .moto-btn-wrapper:hover .btn {
+      background: #fff;
+      color: #6200EA; }
+  .moto-btn-group .moto-btn-wrap-left {
+    padding: 2px 0px 2px 1px;
+    position: relative;
+    border-left: 1px solid #6200ea;
+    display: block; }
+    .moto-btn-group .moto-btn-wrap-left:before {
+      content: '';
+      position: absolute;
+      border: 1px solid #6200ea;
+      transform: skew(-33deg);
+      -webkit-transform: skew(-33deg);
+      top: 0;
+      bottom: 0;
+      left: -17px;
+      right: -20px; }
+  .moto-btn-group .moto-btn-wrapper-left {
+    position: relative;
+    display: block; }
+    .moto-btn-group .moto-btn-wrapper-left:before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      transition: 400ms all;
+      -webkit-transition: 400ms all;
+      background: #6200ea;
+      transform: skew(-33deg);
+      -webkit-transform: skew(-33deg); }
+    .moto-btn-group .moto-btn-wrapper-left:hover:before {
+      background: #fff; }
+    .moto-btn-group .moto-btn-wrapper-left:hover .btn {
+      background: #fff;
+      color: #6200EA; }
+  .moto-btn-group .btn {
     width: 100%;
     border: 0;
     padding: 10px; }

@@ -66,7 +66,8 @@ $font-play: 'Play', sans-serif;
             -webkit-transform: skew(-33deg);
         }
 
-        input[type="text"] {
+        input[type="text"],
+        button.right {
             padding-left: 35px;
             margin: 0;
             width: 100% !important;
@@ -129,6 +130,129 @@ $font-play: 'Play', sans-serif;
             content: '';
             position: absolute;
             left: -15px;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            transition: 400ms all;
+            -webkit-transition: 400ms all;
+            background: #6200ea;
+            transform: skew(-33deg);
+            -webkit-transform: skew(-33deg);
+        }
+
+        &:hover:before {
+            background: #fff;
+        }
+
+        &:hover .btn {
+            background: #fff;
+            color: $primary;
+        }
+    }
+
+    .btn {
+        width: 100%;
+        border: 0;
+        padding: 10px;
+    }
+
+}
+
+.moto-btn-group {
+    width: 100%;
+    overflow: hidden;
+
+    tbody tr {
+        width: 46%;
+        float: right;
+    }
+
+    tbody tr:first-child {
+        width: 46%;
+        float: left;
+    }
+
+    tr td {
+        width: 100%;
+        display: block;
+        float: left;
+        padding: 0;
+    }
+
+    .moto-btn-wrap {
+        padding: 2px 1px 2px 0;
+        position: relative;
+        border-right: 1px solid #6200ea;
+        display: block;
+
+        &:before {
+            content: '';
+            position: absolute;
+            border: 1px solid #6200ea;
+            transform: skew(-33deg);
+            -webkit-transform: skew(-33deg);
+            top: 0;
+            bottom: 0;
+            left: -17px;
+            right: -20px;
+        }
+    }
+
+    .moto-btn-wrapper {
+        position: relative;
+        display: block;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            transition: 400ms all;
+            -webkit-transition: 400ms all;
+            background: #6200ea;
+            transform: skew(-33deg);
+            -webkit-transform: skew(-33deg);
+        }
+
+        &:hover:before {
+            background: #fff;
+        }
+
+        &:hover .btn {
+            background: #fff;
+            color: $primary;
+        }
+    }
+
+    .moto-btn-wrap-left {
+        padding: 2px 0px 2px 1px;
+        position: relative;
+        border-left: 1px solid #6200ea;
+        display: block;
+
+        &:before {
+            content: '';
+            position: absolute;
+            border: 1px solid #6200ea;
+            transform: skew(-33deg);
+            -webkit-transform: skew(-33deg);
+            top: 0;
+            bottom: 0;
+            left: -17px;
+            right: -20px;
+        }
+    }
+
+    .moto-btn-wrapper-left {
+        position: relative;
+        display: block;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 18px;
             top: 0;
             bottom: 0;
             width: 100%;
