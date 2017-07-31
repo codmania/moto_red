@@ -388,3 +388,6 @@ table.table-rating td.rating .uk-icon-star {
 
 .progress-group .uk-progress {
   margin-top: 0; }
+
+.acymailing_form tr td .mail-wrap:hover input[type="text"]:hover, .acymailing_form tr td .mail-wrap:hover input[type="text"]:focus {
+  outline: none !important; }

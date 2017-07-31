@@ -559,3 +559,9 @@ table.table-rating {
     }
 }
 
+.acymailing_form tr td .mail-wrap:hover input[type="text"] {
+    &:hover,
+    &:focus {
+        outline: none !important;
+    }
+}
