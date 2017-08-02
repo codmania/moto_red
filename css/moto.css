@@ -449,3 +449,12 @@ table.table-rating td.rating .uk-icon-star {
   background-color: #eee; }
   .check-btns table {
     margin-bottom: 0; }
+
+.player-article .info {
+  padding-bottom: 10px; }
+
+.player-article .img-wrap .player-number span {
+  color: #fff; }
+
+.player-article .bio a {
+  color: #fff; }

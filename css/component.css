@@ -68,7 +68,7 @@ body {
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 .color-white {
-  color: #fff; }
+  color: #fff !important; }
 
 .color-primary {
   color: #6200EA !important; }
